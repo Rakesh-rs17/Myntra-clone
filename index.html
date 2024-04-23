@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping for Women, Mes, Kids Fashion & Lifestyle - Myntra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="myx-indexcontainer">
+            <header class="container">
+                <nav class="flex space-between nav">
+                    <div class="left flex item-center  ">
+                        <a href="http://127.0.0.1:5500/index.html" alt="Myntra.com"> <img
+                                src="data:image/png;base64,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"
+                                alt=""></a>
+                        <ul class="nav-menu flex item-center justify-center uppercase semibold">
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Kids</a></li>
+                            <li><a href="">Home & living</a></li>
+                            <li><a href="">Beauty</a></li>
+                            <li><a href="">Studio</a></li>
+                        </ul>
+                    </div>
+                    <div class="right flex item-center">
+                        <input class="" type="search" placeholder="Search for product">
+                        <div class="profile mx-2"><a href=""><i class="fa-solid fa-user"></i>profile</a></div>
+                        <div class="wishlist mx-2"><a href=""><span class="fa-regular fa-heart"></span>Wishlist</a></div>
+                        <div class="bag mx-2"><a href=""><span class="fa-solid fa-bag-shopping"></span>Bag</a></div>
+                    </div>
+                </nav>
+            </header>
+           </div>
+    </div>
+<main class="shop-base">
+   
+        <div class="myx-indexcontainer"><div class="dicount-banner-top">
+            <a href="http://myntra.com">
+                <div>
+                    <picture class="img-responsive">
+                        <img src="discount-banner-top.webp" style="width: -webkit-fill-available;" alt="">
+
+                    </picture>
+                </div>
+            </a>
+        </div></div>
+        <div class="myx-indexcontainer">
+            <Div class="banner justify-center flex ">
+                <div class="banner-part  banner-left" style="width: 50%;">
+                    <a href="https://www.myntra.com/shop/men">
+    <picture class="banner-left img-responsive" >
+        <img src="banner-left.jpg" style="width: -webkit-fill-available;" alt="">
+    </picture>
+                    </a>
+                </div>
+                <div class="banner-part banner-right" style="width: 50%;">
+                    <a href="https://www.myntra.com/shop/men">
+    <picture class="banner-right img-responsive">
+        <img src="banner-right.jpg" style="width: -webkit-fill-available;" alt="">
+    </picture>
+                    </a>
+                </div></div>
+        </div>
+        <div class="myx-indexcontainer">
+            <div class="coupan-corner zero flex  justify-center ">
+                <picture class="img-responsive"><img src="coupen-here.webp" style="width: -webkit-fill-available;" alt="">
+                </picture>
+              </div>
+        </div>
+        <div class="myx-indexcontainer">
+            <div class="coupon-section zero flex">
+                <div class="coupon-section1" style="width: 50%;">
+                    <a href="//https://myntra.com/online-fashion-store">
+                        <picture class="coupons img-responsive">
+                            <img src="coupan1.webp" style="width: -webkit-fill-available;" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="coupon-section2" style="width: 50%;">
+                    <a href="//https://myntra.com/online-fashion-store">
+                        <picture class="coupons img-responsive">
+                            <img src="coupon2.webp" style="width: -webkit-fill-available;" alt="">
+                        </picture>
+                    </a>
+                </div>
+        
+            </div>
+        </div>
+    <div class="myx-indexcontainer">
+        <div class="deals-banner " >
+            <a href="https://www.myntra.com/">
+               <picture class="img-responsive banner-deals ">
+                   <img src="victory-deals.webp" style="width: -webkit-fill-available;" alt="">
+               </picture>
+            </a>
+           </div>
+    </div>
+    <div class="myx-indexcontainer">
+        <div class="container-list-offer-img flex" >
+            <div class="offer-link-img">
+                <a href="https://www.myntra.com/footwear?f=Brand%3AADIDAS%2CADIDAS%20Originals%2CASICS%2CSkechers%3A%3ACategories%3ACasual%20Shoes%2CSports%20Shoes&rawQuery=footwear&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0">
+                    <picture class="img-responsive">
+                        <img src="vicotry-deals-img1.webp" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="offer-link-img">
+                <a href="https://www.myntra.com/women-footwear?f=Brand%3AALDO%2CBoohoo%2CDOROTHY%20PERKINS%2CFCUK%2CKenneth%20Cole%2CMANGO%2CMissguided%2CSaint%20G&rawQuery=Women%20Footwear&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                    <picture class="img-responsive">
+                        <img src="vicotry-deals-img2.webp" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="offer-link-img">
+                <a href="https://www.myntra.com/footwear?f=Brand%3AAllen%20Solly%2CAnouk%2CCarlton%20London%2CCarlton%20London%20sports%2CCatwalk%2CDressBerry%2CELLE%2CHouse%20of%20Pataudi%2CInc%205%2CKook%20N%20Keech%2CLavie%2CMarc%20Loire%2CMetro%2CMochi%2CRoadster%2CTaavi%2CTokyo%20Talkies%2CVan%20Heusen%20Woman%2CVishudh%3A%3ACategories%3AFlats%2CHeels%3A%3AGender%3Amen%20women%2Cwomen&rawQuery=footwear&rf=Discount%20Range%3A65.0_100.0_65.0%20TO%20100.0">
+                    <picture class="img-responsive">
+                        <img src="vicotry-deals-img3.webp" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="offer-link-img">
+                <a href="https://www.myntra.com/women?f=Brand%3ABoohoo%2CDOROTHY%20PERKINS%2CMISSPAP%2COASIS%2CWAREHOUSE&rawQuery=women&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                    <picture class="img-responsive">
+                        <img src="vicotry-deals-img4.webp" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="offer-link-img">
+                <a href="https://www.myntra.com/men-footwear?f=Brand%3AABROS%2CASIAN%2CAction%2CAction%20EVA%20Flotter%2CAction%20Plus%2CAfroJack%2CAjanta%2CAllen%20Cooper%2CAllen%20Solly%2CArrow%2CBata%2CBig%20Fox%2CBirkenstock%2CBuckaroo%2CBugatti%2CCHUPPS%2CCalvin%20Klein%2CCalvin%20Klein%20Jeans%2CCampus%2CCarlton%20London%2CCarlton%20London%20sports%2CChamps%2CClarks%2CColumbus%2CDESI%20COLOUR%2CDelize%2CDoc%20Martin%2CDuke%2CFAUSTO%2CFURO%20by%20Red%20Chief%2CFentacia%2CFlorsheim%2CFlying%20Machine%2CGABICCI%2CGRIFFIN%2CHF%20JOURNEY%2CHIGHLANDER%2CHikBi%2CHush%20Puppies%2CID%2CIMPAKTO%2CIMPERIO%2CJQR%2CJack%20%26%20Jones%2CJack%20Rebel%2CKRAASA%2CKhadims%2CKobSook%2CLEFORE%2CLOCOMOTIVE%2CLOUIS%20STITCH%2CLacoste%2CLancer%2CLee%20Cooper%2CLevis%2CLiberty%2CLondon%20Rag%2CLouis%20Philippe%2CMONKSTORY%2CMOZAFIA%2CMUTAQINOTI%2CMactree%2CMetro%2CMochi%2CNorth%20Star%2CPaaduks%2CParagon%2CPupil%20London%2CRAPAWALK%2CRARE%20RABBIT%2CREFOAM%2CROSSO%20BRUNELLO%2CRapidBox%2CRed%20Chief%2CRegal%2CRuosh%2CSCENTRA%2CSHENCES%2CSHOZANIA%2CSPYKAR%2CSaint%20G%2CSan%20Frissco%2CSandak%20by%20Bata%2CScholl%2CSparx%2CTHE%20MADRAS%20TRUNK%2CTOMS%2CTeakwood%20Leathers%2CThe%20Indian%20Garage%20Co%2CTommy%20Hilfiger%2CTruffle%20Collection%2CU.S.%20Polo%20Assn.%2CUnited%20Colors%20of%20Benetton%2CV8%20by%20Ruosh%2CVan%20Heusen%2CWALKWAY%20by%20Metro%2CWildcraft%2CWoakers%2CWoodland%2Cmax%2Cmr.wonker%2Cplaeto%2Cyoho%3A%3ACategories%3ACasual%20Shoes%2CSports%20Shoes&rf=Price%3A499.0_2000.0_499.0%20TO%202000.0&sort=recommended">
+                    <picture class="img-responsive">
+                        <img src="vicotry-deals-img5.webp" alt="">
+                    </picture>
+                </a>
+            </div>
+            <div class="offer-link-img">
+                <a href="https://www.myntra.com/fusion-wear?f=Occasion%3AFestive&rf=Discount%20Range%3A60.0_100.0_60.0%20TO%20100.0&sort=popularity">
+                    <picture class="img-responsive">
+                        <img src="vicotry-deals-img6.webp" alt="">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="myx-indexcontainer">
+        <div class="shop-by-category-banner" style="width: 100%;">
+            <picture class="img-responsive">
+<img src="sub-caategory.webp" style="width: -webkit-fill-available;" alt="">
+            </picture>
+        </div>
+    </div>
+    <div class="myx-indexcontainer">
+        <div class="container-container flex zero" style="    display: block;
+        width: 100%;" >
+            <div class="container justify-center flex zero" style="width: 100%;">
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/fusion-wear?rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0&sort=popularity">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img1.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/men-casual-wear?plaEnabled=false&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img2.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/wsa-all-new?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img3.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/wsa-all-new?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img4.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/womens-western-wear?rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img5.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/wsa-all-new?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img6.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div 
+            </div>
+        </div>
+    </div>
+    <div class="myx-indexcontainer">
+        <div class="container-container flex zero"style="    display: block;
+        width: 100%;" >
+            <div class="container justify-center flex zero" style="width: 100%;">
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/loungewear?plaEnabled=false&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img7.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/men-innerwear?rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img8.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/lingerie?rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img9.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/watches?rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img10.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/beauty-page-appliances?rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img11.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/grooming?f=Brand%3ABeardhood%2CBombay%20Shaving%20Company%2CFoolzy%2CTHE%20MAN%20COMPANY%2CUstraa&rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img12.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+                <div 
+            </div>
+        </div>
+    </div>
+    <div class="myx-indexcontainer">
+        <div class="container-container flex zero " style="    display: block;
+        width: 100%;" >
+            <div class="container justify-center flex zero" style="width: 100%;">
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/kids?plaEnabled=false&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img13.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/footwear?f=Gender%3Amen%2Cmen%20women&plaEnabled=false&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img14.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/footwear-new?f=Gender%3Amen%20women%2Cwomen&plaEnabled=false&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img15.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/men-accessories?f=Categories%3ABelts%2CWallets&plaEnabled=false&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img16.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/office-wear?rawQuery=office%20wear&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img17.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/men-ethnic-wear?plaEnabled=false&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img18.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+
+                <div 
+            </div>
+        </div>
+    </div>
+    <div class="myx-indexcontainer">
+        <div class="container-container flex zero" style="    display: block;
+        width: 100%;" >
+            <div class="container justify-center flex zero" style="width: 100%;">
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/home-furnishing-menu?plaEnabled=false&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img19.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/handbags-and-bags?f=Categories%3AClutches%2CHandbags%2CWallets%3A%3AGender%3Amen%20women%2Cwomen&plaEnabled=false&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img20.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/gadgets?f=Categories%3AHeadphones%2CSpeakers&rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img21.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/women-jewellery?rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img22.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/plus-size-all?f=Gender%3Amen%20women%2Cwomen&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0&sort=new">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img23.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/sztori?f=Gender%3Amen%2Cmen%20women&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0&sort=new">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img24.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div 
+            </div>
+        </div>
+    </div>
+    <div class="myx-indexcontainer">
+        <div class="container-container flex zero" style="    display: block;
+        width: 100%;" >
+            <div class="container justify-center flex zero" style="width: 100%;">
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="#">
+                            <picture class="img-responsive">
+                                <img src="" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/trolley-bags?plaEnabled=false&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img25.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/bag?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img26.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="https://www.myntra.com/trolley-bags?plaEnabled=false&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                            <picture class="img-responsive">
+                                <img src="shop-by-category-img27.jpg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="container-base">
+                    <div class="shop-by-category-img zero">
+                        <a href="#">
+                            <picture class="img-responsive">
+                                <img src="" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div 
+            </div>
+        </div>
+    </div>   
+</main>
+<div class="footer" style="position: relative;">
+<footer>
+    <div class="desktop-genericInfo flex ">
+        <div class="desktop-shopping-links">
+<p style="text-transform: uppercase;"><a href="#">Online Shopping</a></p>
+<a href="">Men</a>
+<a href="">Women</a>
+<a href="">Kids</a>
+<a href="">Home & living</a>
+<a href="">Beauty</a>
+<a href="">Gift Cards</a>
+<a href="">Myntra Insider</a>
+<p style="text-transform: uppercase;"><a href="#">Useful Links</a></p>
+<a href="">Blog</a>
+<a href="">Careers</a>
+<a href="">Site Map</a>
+<a href="">Corporate Information</a>
+<a href="">Whitehat</a>
+<a href="">Cleartrip</a>
+
+        </div>
+        <div class="customerPolicies">
+            <p style="text-transform: uppercase; margin-bottom: 0;">
+                <a href="#">Customer Policies </a></p>
+<a href="">Contact Us</a>
+<a href="">FAQ</a>
+<a href="">T&C</a>
+<a href="">Terms of Use</a>
+<a href="">Track Order</a>
+<a href="">Shipping</a>
+<a href="">Cancellation</a>
+<a href="">Returns</a>
+<a href="">Privacy policy</a>
+<a href="">Gievance officer</a>
+        </div>
+        <div class="appExperience">
+            <h4 style="text-transform: uppercase;">Experience Myntra App On Mobile</h4>
+            <div class="download-link" style="display: flex;">
+                    <a href="https://play.google.com/store/apps/details?id=com.myntra.android" >
+                        <picture class="img-responsive">
+                            <img src="play-store-btn.png" alt="">
+                        </picture>
+                    </a>
+                    <a href="https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059" >
+                        <picture class="img-responsive">
+                            <img src="app-store-btn.png" alt="">
+                        </picture>
+                    </a>
+            </div>
+            <p style="text-transform: uppercase;">Keep In Touch</p>
+            <div class="keep-in-touch flex" style="width: 50%; ">
+                <a href="https://facebook.com/myntra" >
+                        <img src="fb-icon.png" alt="">
+                </a>
+                <a href="https://twitter.com/myntra" >
+                    <img src="twitter-icon.png" alt="">
+            </a>
+            <a href="https://youtube.com/user/myntra" >
+                <img src="YT-icon.png" alt="">
+        </a>
+        <a href="https://instagram.com/myntra" >
+            <img src="insta-icon.png" alt="">
+    </a>
+            </div>
+        </div>
+        <div class="promises">
+            <div class="desktop-section flex ">
+                <div class="original" >
+                    <img src="original.png" alt="">
+                </div>
+                <div class="section-part">
+                    <strong>100% ORIGINAL</strong>
+                    guarantee for all products at myntra.com 
+                   </div>
+                <strong></strong>
+                
+            </div>
+            <div class="desktop-section flex">
+                <div class="return" style="width: 80px; height: 81px;">
+                    <img src="return.png" alt="">
+                </div>
+               <div class="section-part">
+                <strong>Return within 14days</strong>
+                of receiving your order 
+               </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="desktop-popularSearch">
+        <hr>
+        <div class="desktop-searchTitle" style="text-transform: uppercase;">Popular Searches</div>
+        <div class="desktop-searchLinks">
+<a href="#" >Makeup |</a>
+<a href="#" >Dresses For Girls | </a>
+<a href="#" >T-Shirts | </a>
+<a href="#" >Sandals | </a>
+<a href="#" >Headphones | </a>
+<a href="#" >Babydolls | </a>
+<a href="#" >Blazzers For Men | </a>
+<a href="#" >Handbags | </a>
+<a href="#" >Ladies Watches | </a>
+<a href="#" >Bags | </a>
+<a href="#" >Sport Shoes | </a>
+<a href="#" >Reebok Shoes | </a>
+<a href="#" >Puma Shoes | </a>
+<a href="#" >Boxers | </a>
+<a href="#" >Wallets | </a>
+<a href="#" >Tops | </a>
+<a href="#" >Earrings | </a>
+<a href="#" >Fastrack Watches | </a>
+<a href="#" >Kurtis | </a>
+<a href="#" >Nike | </a>
+<a href="#" >Smart Wathces | </a>
+<a href="#" >Titan Watches | </a>
+<a href="#" >Designe Blouse | </a>
+<a href="#" >Gowns | </a>
+<a href="#" >Rings | </a>
+<a href="#" >Cricket shoes | </a>
+<a href="#" >Forever 21 | </a>
+<a href="#" >Eye Makeup | </a>
+<a href="#" >Photo Frames | </a>
+<a href="#" >Punjabi Suits | </a>
+<a href="#" >Bikini | </a>
+<a href="#" >Myntra Fashion Show | </a>
+<a href="#" >Lipstick | </a>
+<a href="#" >Saree | </a>
+<a href="#" >Watches | </a>
+<a href="#" >Dresses | </a>
+<a href="#" >Lehenga | </a>
+<a href="#" >Nike Shoes | </a>
+<a href="#" >Goggles | </a>
+<a href="#" >Bras | </a>
+<a href="#" >Suit | </a>
+<a href="#" >Chinos | </a>
+<a href="#" >Shoes | </a>
+<a href="#" >Addidas Shoes | </a>
+<a href="#" >Woodland Shoes | </a>
+<a href="#" >Jewellery | </a>
+<a href="#" >Designers Saree | </a>
+        </div>
+    </div>
+    <div class="desktop-fInfoSection flex">
+        <div class="desktop-contactUs">In case of any concer, <a href="#">Contact Us</a></div>
+        <div class="desktop-rightsReserved">© 2024 www.myntra.com. All rights reserved.</div>
+        <div class="desktop-companyName">A Flipkart company</div>
+    </div>
+    <div class="desktop-IcContainer ">
+        <hr >
+        <p style="font-weight: 700; margin: 40px 0px 10px 0px;" >Registered Office Address</p>
+        <div class="desktop-IcContainer-base flex">
+            
+            <div class="desktop-companyAddress">
+               
+                Buildings Alyssa,<br>
+    Begonia and Clover situated in Embassy Tech Village,<br>
+    Outer Ring Road,<br>
+    Devarabeesanahalli Village,<br>
+    Varthur Hobli,<br>
+    Bengaluru – 560103, India
+            </div>
+            <div class="desktop-companyGST ">CIN: U72300KA2007PTC041799<br>
+                Telephone: <a href="#" >+91-80-61561999</a></div>
+        </div>
+    </div>
+    <div class="desktop-gyanContainer"></div>
+</footer>
+</div>
+</body>
+
+</html>

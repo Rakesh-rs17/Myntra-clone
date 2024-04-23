@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family-Roboto:wght@300&display=swap');
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    /* padding:0;
+    margin: 0; */
+}
+
+header{
+    box-shadow: rgba(0,0,0,0.35) 0px 0px 15px;
+    position: sticky;
+    background: white;
+    top: 0;
+    
+}
+
+
+.left img{
+    width: 67px;
+    height: 65px;
+}
+
+nav{
+    padding: 0 0 ;
+    width: 100%;
+    font-size: 12px ;
+}
+
+.container{
+    padding: 0 30px;
+    margin: 13px 0px;
+
+}
+li{
+    list-style: none;
+    padding: 0 30px ;
+ }
+
+ .section1{
+    background-color: #f2f2f2;
+    height:122vh;
+ }
+
+ .coupon-section{
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 0;
+ }
+.container-list{
+    width: 100%;
+}
+
+.banner,.banner-deals{
+    width: 100%;
+}
+.container-list-offer-img {
+    display: flex;
+}
+
+.offer-link-img,.shop-by-category-img {
+    flex: 1; /* Each child element takes equal space */
+    margin-right: 10px; /* Optional: add margin between elements */
+}
+.img-responsive img {
+    width: 100%;
+    height: auto;
+}
+
+.container-base{
+    flex: 1;
+}
+
+.desktop-shopping-links{
+    float: left;
+    width: 155px;
+    display: inline-grid;
+    vertical-align: top;
+    padding-right: 20px;
+    font-size: 12px;
+}
+.customerPolicies>a{
+    margin: 0;
+    
+}
+.customerPolicies{
+    float: left;
+    width: 155px;
+    height: 250px;
+    display: inline-grid;
+    vertical-align: top;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.appExperience{
+    float: left;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    font-size: 12px;
+}
+.promises{
+    float: left;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    font-size: 15px;
+    color: #696b79;
+    
+}
+strong{
+    color: black;
+    font-size: 14px;
+}
+
+.desktop-shopping-links>a{
+        color: #696b79;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    cursor: pointer;
+    line-height: normal;
+    
+}
+
+.customerPolicies>a{
+    color: #696b79;
+display: block;
+font-size: 15px;
+text-decoration: none;
+padding-bottom:0;
+cursor: pointer;
+line-height:1px;
+}
+
+.desktop-section{
+    margin:15px 0px 0px 30px;
+}
+
+.desktop-section>div{
+    padding-right: 10px;
+}
+.keep-in-touch>a{
+    padding-right: 15px;
+}
+
+.desktop-popularSearch hr {
+    border: 1px;
+    height: 1px;
+    background-color: #eaeaec;
+}
+
+hr{
+    box-sizing: content-box;
+    overflow: visible;
+    height: 0;
+    
+}
+
+.desktop-popularSearch{
+    margin-top: 30px;
+}
+
+.desktop-searchTitle{
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: -15px;
+    font-size: 12px;
+    background: #fafbfc;
+    color: #282c3f;
+    padding-right: 10px;
+}
+
+.footer{
+    max-width: 1080px;
+    margin: auto;
+    min-width: 980px;
+}
+.desktop-searchLinks{
+    margin-top: 30px;
+}
+.desktop-searchLinks>a{
+    text-decoration: none;
+    color:#696b79;
+    font-size: 15px;
+    line-height: 25px;
+
+}
+
+.desktop-fInfoSection{
+ margin: 45px 0px 30px 0px;
+ justify-content: space-between;
+ color:#696b79;
+}
+
+.desktop-contactUs>a{
+    font-weight: 700;
+    color: #526cd0;
+
+}
+
+.desktop-IcContainer hr {
+    border: 1px;
+    height: 1px;
+    background-color: #eaeaec;
+}
+.desktop-IcContainer-base{
+    margin-top: 30px;
+}
+.desktop-companyAddress{
+width: 70%;
+}
+.desktop-companyGST{
+    display: flex;
+    align-items: end;
+    font-size: 12px;
+    width: 30%;
+}
+.desktop-companyGST>a{
+    font-weight: 700;
+    color: #526cd0;
+    position: relative;
+    right: 114px;
+}
+
+footer p{
+    font-weight: 700;
+
+}

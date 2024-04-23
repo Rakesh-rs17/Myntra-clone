@@ -1,0 +1,61 @@
+.flex{
+    display: flex;
+}
+.item-center{
+align-items: center;
+
+}
+ .justify-center{
+justify-content: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: None;
+    color: black;
+}
+.semibold{
+  font-weight: bolder;
+
+}
+
+.space-between{
+    justify-content: space-between;
+   
+}
+
+.mx-2{
+     margin-left: 12px;
+    margin-right: 12px;
+}
+
+.zero{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+.webkit-full-width{
+    width: 100%;
+    height: auto;
+
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.myx-indexcontainer{
+    display: block;
+
+}
